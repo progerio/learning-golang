@@ -1,3 +1,3 @@
-module org.progerio.com/learning
+module github.com/progerio/learning-golang
 
-go 1.13
+go 1.15
