@@ -1,7 +1,5 @@
 package variables
 
-package variables
-
 import "fmt"
 
 /* Can be declared
