@@ -19,7 +19,9 @@ func main() {
 	fmt.Println("")
 
 	fmt.Println("..........Functions............")
-	fmt.Println("Soma de 10 + 20 = ", functions.Add(10, 20))
+	fmt.Println("The sum from 10 + 20 = ", functions.Add(10, 20))
+	region, continent := functions.Location("LA")
+	fmt.Printf("Location : region = %s and continent = %s", region, continent)
 	fmt.Println("")
-
+	
 }
