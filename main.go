@@ -27,7 +27,7 @@ func main() {
 	fmt.Println("")
 
 	fmt.Println("..........Structs..............")
-	me := structs.Artist{Name: "Paulo", Genre: "Software Enginer", Songs: 42}
+	me := &structs.Artist{Name: "Paulo", Genre: "Software Enginer", Songs: 42}
 	fmt.Printf("%s realases their %dth song\n", me.Name, structs.NewRelease(me))
 	fmt.Printf("%s has a total of %d songs", me.Name, me.Songs)
 	fmt.Println("")
