@@ -3,6 +3,7 @@ package types
 import (
 	"fmt"
 	"math/cmplx"
+	"time"
 )
 
 var (
@@ -18,6 +19,7 @@ func PrintTypes() {
 	fmt.Printf(f, maxInt, maxInt)
 	fmt.Printf(f, complex, complex)
 }
+
 // PrintTypesConversion Print types conversions
 func PrintTypesConversion(i int) {
 
@@ -28,3 +30,10 @@ func PrintTypesConversion(i int) {
 	fmt.Println(u)
 }
 
+// TimeMap Type assertion
+func TimeMap(y interface{}) {
+	z, ok := y.(map[string]interface{})
+	if ok {
+		z["update_at"] = time.Now()
+	}
+}

@@ -3,14 +3,14 @@ package main
 import (
 	"fmt"
 
-	"org.progerio.com/learning/src/types"
+	"github.com/progerio/learning-golang/src/types"
 
-	"org.progerio.com/learning/src/structs"
+	"github.com/progerio/learning-golang/src/structs"
 
-	"org.progerio.com/learning/src/functions"
+	"github.com/progerio/learning-golang/src/functions"
 
-	"org.progerio.com/learning/src/constants"
-	"org.progerio.com/learning/src/variables"
+	"github.com/progerio/learning-golang/src/constants"
+	"github.com/progerio/learning-golang/src/variables"
 )
 
 func main() {
@@ -39,6 +39,11 @@ func main() {
 	fmt.Println(".... Print types conversions....")
 	types.PrintTypesConversion(42)
 	fmt.Println(".... Print type assertion.......")
-	
+	foo := map[string]interface{}{
+		"Matt": 42,
+	}
+	types.TimeMap(foo)
+	fmt.Println(foo)
+
 	fmt.Println("")
 }
