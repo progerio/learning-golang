@@ -34,6 +34,7 @@ var (
 	name, location, age = "Prince Oberyn", "Dorne", 32
 )
 
+// Variables Print variables
 func Variables() {
 	fmt.Println(name, location, age)
 	// A variable can contain any type, including functions

@@ -36,5 +36,9 @@ func main() {
 
 	fmt.Println("..........Types.................")
 	types.PrintTypes()
+	fmt.Println(".... Print types conversions....")
+	types.PrintTypesConversion(42)
+	fmt.Println(".... Print type assertion.......")
+	
 	fmt.Println("")
 }

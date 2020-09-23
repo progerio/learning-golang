@@ -1,8 +1,8 @@
 package constants
 
-
 import "fmt"
 
+// Constants
 const (
 	Pi    = 3.14
 	Truth = false
@@ -10,6 +10,7 @@ const (
 	Small = Big >> 61
 )
 
+// Constants Print contants
 func Constants() {
 	const Greeting = ""
 	fmt.Println(Pi)
