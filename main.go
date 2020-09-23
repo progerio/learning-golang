@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 
+	"org.progerio.com/learning/src/structs"
+
 	"org.progerio.com/learning/src/functions"
 
 	"org.progerio.com/learning/src/constants"
@@ -23,5 +25,10 @@ func main() {
 	region, continent := functions.Location("LA")
 	fmt.Printf("Location : region = %s and continent = %s", region, continent)
 	fmt.Println("")
-	
+
+	fmt.Println("..........Structs..............")
+	me := structs.Artist{Name: "Paulo", Genre: "Software Enginer", Songs: 42}
+	fmt.Printf("%s realases their %dth song\n", me.Name, structs.NewRelease(me))
+	fmt.Printf("%s has a total of %d songs", me.Name, me.Songs)
+	fmt.Println("")
 }
