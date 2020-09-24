@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"time"
 
 	"github.com/progerio/learning-golang/src/types"
 
@@ -10,6 +11,7 @@ import (
 	"github.com/progerio/learning-golang/src/functions"
 
 	"github.com/progerio/learning-golang/src/constants"
+
 	"github.com/progerio/learning-golang/src/variables"
 )
 
@@ -32,6 +34,9 @@ func main() {
 	me := &structs.Artist{Name: "Paulo", Genre: "Software Enginer", Songs: 42}
 	fmt.Printf("%s realases their %dth song\n", me.Name, structs.NewRelease(me))
 	fmt.Printf("%s has a total of %d songs\n", me.Name, me.Songs)
+
+	bootcamp := structs.Bootcamp{Lat: 34.012836, Lon: -118.495338, Date: time.Now()}
+	fmt.Println(bootcamp)
 	fmt.Println("")
 
 	fmt.Println("..........Types.................")
@@ -44,6 +49,6 @@ func main() {
 	}
 	types.TimeMap(foo)
 	fmt.Println(foo)
-
 	fmt.Println("")
+
 }
