@@ -51,4 +51,8 @@ func main() {
 	fmt.Println(foo)
 	fmt.Println("")
 
+	x := new(structs.Bootcamp)
+	y := &structs.Bootcamp{}
+	fmt.Println(*x == *y)
+
 }
