@@ -37,6 +37,11 @@ func main() {
 
 	bootcamp := structs.Bootcamp{Lat: 34.012836, Lon: -118.495338, Date: time.Now()}
 	fmt.Println(bootcamp)
+
+	x := new(structs.Bootcamp)
+	y := &structs.Bootcamp{}
+	fmt.Println(*x == *y)
+
 	fmt.Println("")
 
 	fmt.Println("..........Types.................")
@@ -50,9 +55,5 @@ func main() {
 	types.TimeMap(foo)
 	fmt.Println(foo)
 	fmt.Println("")
-
-	x := new(structs.Bootcamp)
-	y := &structs.Bootcamp{}
-	fmt.Println(*x == *y)
 
 }
