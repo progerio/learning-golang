@@ -41,11 +41,18 @@ func main() {
 	x := new(structs.Bootcamp)
 	y := &structs.Bootcamp{}
 	fmt.Println(*x == *y)
-	user :=structs.User{ID: 42, Name: "Matt", Location: "LA"}
+	user := structs.User{ID: 42, Name: "Matt", Location: "LA"}
 	p := structs.Player{user, 90404}
 	fmt.Printf("Id: %d, Name: %s, Location: %s, Game id: %d\n", p.ID, p.Name, p.Location, p.Location)
 	p.ID = 11
 	fmt.Printf("%+v", p)
+
+	p2 := structs.Player{}
+	p2.ID = 42
+	p2.Name = "Matt"
+	p2.Location = "LA"
+	fmt.Println(p2.Greetings())
+
 	fmt.Println("")
 
 	fmt.Println("..........Types.................")
